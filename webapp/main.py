@@ -1,0 +1,7 @@
+from flask import Flask,render_template
+app=Flsk(__name__)
+@app.route('/')
+def home():
+  return render_templat('index.html',title="home page")
+  if __name__=='__main__':
+    app.un(host='127.0.0.1',port=8080,debug=True)
